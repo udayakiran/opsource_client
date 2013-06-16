@@ -19,9 +19,13 @@ This is a one time configuration where you specify your opsource account's organ
 username and password of the admin account using which API calls need to be made.
 
 OpsourceClient::Client.configure do
-  organization_id <organization_id>
-  admin_username  <admin_username>
-  admin_password  <admin_password>
+
+  organization_id organization_id
+  
+  admin_username  admin_username
+  
+  admin_password  admin_password
+  
 end
 
 Sample API call -
@@ -29,7 +33,7 @@ Sample API call -
 To create a NAT rule
 
 opc = OpsourceClient::Client.instance
-opc.create_natrule({:net_id => network_id, :sourceIp => private_ip, :name => private_ip})
 
+opc.create_natrule({:net_id => network_id, :sourceIp => private_ip, :name => private_ip})
 
 
