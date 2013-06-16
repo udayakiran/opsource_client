@@ -19,9 +19,13 @@ This is a one time configuration where you specify your opsource account's organ
 username and password of the admin account using which API calls need to be made.
 
 OpsourceClient::Client.configure do
-  organization_id <organization_id>
-  admin_username  <admin_username>
-  admin_password  <admin_password>
+
+  organization_id organization_id
+  
+  admin_username  admin_username
+  
+  admin_password  admin_password
+  
 end
 
 Sample API call -
