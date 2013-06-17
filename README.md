@@ -1,4 +1,4 @@
-ruby-opsource
+## ruby-opsource
 =============
 
 (WORK IN PROGRESS ...)
@@ -9,31 +9,31 @@ To use it as a gem - (Coming soon)
 
 To use it as a rails plugin -
 
-1. git clone https://github.com/udayakiran/opsource_client.git
+    1. git clone https://github.com/udayakiran/opsource_client.git
 
 2. copy opsource_client to vendors/plugins
 
-Configuration -
+## Configuration -
 
 This is a one time configuration where you specify your opsource account's organization id,
 username and password of the admin account using which API calls need to be made.
 
-OpsourceClient::Client.configure do
+    OpsourceClient::Client.configure do
 
-  organization_id organization_id
+      organization_id organization_id
   
-  admin_username  admin_username
+      admin_username  admin_username
   
-  admin_password  admin_password
+      admin_password  admin_password
   
-end
+    end
 
-Sample API call -
+## Sample API call -
 
 To create a NAT rule
 
-opc = OpsourceClient::Client.instance
+    opc = OpsourceClient::Client.instance
 
-opc.create_natrule({:net_id => network_id, :sourceIp => private_ip, :name => private_ip})
+    opc.create_natrule({:net_id => network_id, :sourceIp => private_ip, :name => private_ip})
 
 
