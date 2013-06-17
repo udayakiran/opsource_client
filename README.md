@@ -9,9 +9,9 @@ To use it as a gem - (Coming soon)
 
 To use it as a rails plugin -
 
-    1. git clone https://github.com/udayakiran/opsource_client.git
+     git clone https://github.com/udayakiran/opsource_client.git
 
-2. copy opsource_client to vendors/plugins
+     copy opsource_client to vendors/plugins
 
 ## Configuration -
 
