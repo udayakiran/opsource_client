@@ -12,7 +12,7 @@ module OpsourceClient
 
     API_ENDPOINT = "https://api.opsourcecloud.net/oec/0.9/"
     
-    attr_reader :api_endpoint
+    attr_accessor :api_endpoint
 
     def initialize
       @api_endpoint = API_ENDPOINT
