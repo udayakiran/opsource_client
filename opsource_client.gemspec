@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require "opsource_client/version"
 
 Gem::Specification.new do |s|
-  s.name        = "opsoure_client"
+  s.name        = "opsource_client"
   s.version     = OpsourceClient::VERSION
   s.authors     = ["Udaya Kiran"]
   s.email       = ["udaykiran.vit@gmail.com"]
@@ -19,6 +19,5 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_dependency 'xmlsimple'
-  #s.add_development_dependency "rspec"
   s.add_runtime_dependency "activesupport", '~> 2'
 end
