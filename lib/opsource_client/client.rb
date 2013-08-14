@@ -8,40 +8,16 @@ require 'active_support'
 
 module OpsourceClient
   class Client
-    include Singleton
 
     API_ENDPOINT = "https://api.opsourcecloud.net/oec/0.9/"
     
-    attr_accessor :api_endpoint
+    attr_accessor :api_endpoint, :organization_id, :admin_username, :admin_password
 
     def initialize
-      @api_endpoint = API_ENDPOINT
-      @org_id = '123456'
-      @username    = 'USER'
-      @password    = 'PWD'
-    end
-
-    def self.configure(&blk)
-      self.instance.configure &blk
-    end
-
-    def configure(&blk)
-      instance_eval &blk
-    end
-
-    def organization_id(organization_id = nil)
-      @org_id = organization_id if organization_id
-      @org_id
-    end
-
-    def admin_username(username = nil)
-      @username = username if username
-      @username
-    end
-
-    def admin_password(password = nil)
-      @password = password if password
-      @password
+      self.api_endpoint = API_ENDPOINT
+      self.organization_id = '123456'
+      self.admin_username    = 'USER'
+      self.admin_password    = 'PWD'
     end
 
     def api_base_url
