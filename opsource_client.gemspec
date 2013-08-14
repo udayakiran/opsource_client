@@ -4,7 +4,7 @@ require "opsource_client/version"
 
 Gem::Specification.new do |s|
   s.name        = "opsoure_client"
-  s.version     = WepayClient::VERSION
+  s.version     = OpsourceClient::VERSION
   s.authors     = ["Udaya Kiran"]
   s.email       = ["udaykiran.vit@gmail.com"]
   s.homepage    = ""
