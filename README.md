@@ -5,7 +5,8 @@
 
 Ruby client for Opsource cloud's REST API - http://www.opsource.net/Services/Cloud-Hosting/Open-API
 
-To use it as a gem - (Coming soon)
+To use it as a gem -
+     gem 'opsource_client', git: 'https://github.com/udayakiran/opsource_client.git'
 
 To use it as a rails plugin -
 
