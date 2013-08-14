@@ -19,5 +19,5 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_dependency 'xml-simple'
-  s.add_runtime_dependency "activesupport", '~> 2'
+  s.add_runtime_dependency "activesupport"
 end
