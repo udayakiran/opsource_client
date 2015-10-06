@@ -19,21 +19,19 @@ To use it as a rails plugin -
 This is a one time configuration where you specify your opsource account's organization id,
 username and password of the admin account using which API calls need to be made.
 
-    OpsourceClient::Client.configure do
-
-      organization_id organization_id
+    client = OpsourceClient::Client.new
+    client.organization_id = organization_id
+    client.admin_username =  admin_username
+    client.admin_password =  admin_password
   
-      admin_username  admin_username
-  
-      admin_password  admin_password
-  
-    end
 
 ## Sample API call -
 
 To create a NAT rule
 
-    opc = OpsourceClient::Client.instance
+    opc = OpsourceClient::Client.new
+
+    # ...
 
     opc.create_natrule({:net_id => network_id, :sourceIp => private_ip, :name => private_ip})
 
