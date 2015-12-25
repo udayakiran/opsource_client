@@ -1,7 +1,6 @@
 ## ruby-opsource
 =============
 
-(WORK IN PROGRESS ...)
 
 Ruby client for Opsource cloud's REST API. Opsource cloud is formally Dimension Data now.
 
@@ -9,11 +8,21 @@ Ruby client for Opsource cloud's REST API. Opsource cloud is formally Dimension 
 
 0. API details - http://cloud.dimensiondata.com/saas-solutions/services/public-cloud/api
 
+
+NOTE: This is the base client framework and a few sample APIs. More APIs can be added as you need by referring the document attached above.
+
+
+## Usage
+
 To use it as a gem -
+
+     gem install opsource_client
+
+OR
 
      gem 'opsource_client', git: 'https://github.com/udayakiran/opsource_client.git'
 
-To use it as a rails plugin -
+To use it as a rails plugin (For older versions of rails) -
 
      git clone https://github.com/udayakiran/opsource_client.git
 
